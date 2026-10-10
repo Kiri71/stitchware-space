@@ -173,7 +173,7 @@ const traceData: Record<string, TraceRecord> = {
   'SS-002': {
     artisan: 'Ibu Yanti',
     profession: 'Eks Pekerja Garmen Melong',
-    photo: '/penjahit-2.png',
+    photo: '/ibu-yanti.png',
     fallbackPhoto: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80',
     experience: '10 tahun memproduksi aksoris fashion & potong pola kain perca.',
     location: 'Bandung Selatan, Jawa Barat',
@@ -845,6 +845,8 @@ export default function HomePage() {
                         }
                       }}
                       className="h-16 w-16 rounded-full border-2 border-[#D9886C] object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div>
                       <p className="text-base font-bold text-[#2C221E]">{traceProfile.artisan}</p>
